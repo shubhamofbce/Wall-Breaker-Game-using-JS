@@ -24,13 +24,13 @@ function drawPaddle() {
     pen.closePath();
 }
 // Variables to Draw Bricks
-var brickRowcnt = 3;
-var brickcolumncnt = 12;
+var brickRowcnt = 5;
+var brickcolumncnt = 29;
 var brickWidth = 25;
 var brickHeight = 20;
 var brickPadding = 10;
 var brickOffsetTop = 25;
-var brickOffsetLeft = 4;
+var brickOffsetLeft = 10;
 // 2-d array to store Bricks
 var bricks = [];
 for(var c= 0;c<brickcolumncnt;c++){
