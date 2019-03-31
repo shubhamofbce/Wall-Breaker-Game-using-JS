@@ -25,12 +25,12 @@ function drawPaddle() {
 }
 // Variables to Draw Bricks
 var brickRowcnt = 3;
-var brickcolumncnt = 6;
-var brickWidth = 45;
+var brickcolumncnt = 12;
+var brickWidth = 25;
 var brickHeight = 20;
 var brickPadding = 10;
-var brickOffsetTop = 30;
-var brickOffsetLeft = 30;
+var brickOffsetTop = 25;
+var brickOffsetLeft = 4;
 // 2-d array to store Bricks
 var bricks = [];
 for(var c= 0;c<brickcolumncnt;c++){
