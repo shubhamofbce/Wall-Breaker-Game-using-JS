@@ -69,8 +69,9 @@ function collisiondetection(){
                     b.status = 0;
                     score+=5;
                     if(score == brickRowcnt*brickcolumncnt*5){
-                        alert("YOU WIN CONGRATS");
+                        alert("YOU WIN CONGRATS\n Your Score : "+score);
                         document.location.reload();
+                        clearInterval(frames);
                     }
 
 
@@ -131,8 +132,9 @@ function draw() {
         if(x>paddleX && x<paddleX + paddlewd){
             dy = -dy;
         } else {
-            alert("GAME OVER");
+            alert("GAME OVER \n You Scored : "+score);
             document.location.reload();
+            clearInterval(frames);
         }
     }
     if(rightPressed && paddleX< X-paddlewd){
@@ -142,6 +144,7 @@ function draw() {
         paddleX -=7;
     }
 
-    requestAnimationFrame(draw);
+    //requestAnimationFrame(draw);
+
 }
-draw();
+var frames = setInterval(draw,10)
